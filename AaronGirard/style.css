@@ -1,0 +1,214 @@
+
+
+/* Global Styles */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+html, body {
+    height: 100%;
+    
+}
+
+body {
+    background: #f6f6f6;
+    margin:0;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+
+}
+h1, h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    font-size: 4.5rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.6rem;
+}
+/* Links */
+a {
+    color:#3c8453;
+    text-decoration:none;
+
+}
+a:hover {
+    color: #bcaa96;
+}
+footer a {
+    color: #bcaa96;
+    
+}
+footer a:hover {
+    color: #3c8453;
+}
+
+.btn {
+    background: #3c8453;
+    color:#f6f6f6f6;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    position:fixed;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+footer img {
+    height:30px;
+}
+
+/* Home */
+.home {
+    background: url(./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg) no-repeat;
+    background-size:cover; 
+    display:flex;
+    flex-direction: column;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg {
+    background: rgb(255 255 255 / 0.9);
+    padding:30px;
+}
+
+@media screen and (max-width:650px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+/* Qualifications*/
+.qualifications h2 {
+    border-bottom: 2px dashed #d3d4d6;
+
+}
+/*Technical Skills*/
+.technical-skills h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+/* Resume */
+.resume header::before {
+    background: url(./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg) center / cover;
+    background-size: cover;
+    content: "";
+    display:block;
+    height: 400px;
+    
+}
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+   border-bottom: 2px dashed #d3d4d6; 
+}
+
+.download-link {
+    position:fixed;
+    top: 5px;
+    left: 5px;
+}
+
+@media screen and (min-width:1200px) {
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height:200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+/* Work Experience */
+.work-item {
+    margin: 30px 0;
+}
+.work-details p {
+    margin:0;
+
+}
+
+@media screen and (min-width:860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
+}
+/* Education */
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: #d3d4d6;
+    
+}
+.socials {
+    list-style-type:none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+
+}
+.socials img {
+    width: 32px;
+}
+.socials img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 860px) {
+    footer {
+    display:flex;
+    justify-content: space-between;
+    padding:0 20px;
+    }
+
+}
+@media screen and (max-width: 859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
